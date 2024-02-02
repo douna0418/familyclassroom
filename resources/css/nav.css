@@ -1,0 +1,65 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8%;
+    background-color: #ffffff;
+}
+.nav_logo img {
+    width: 220px;
+}
+.nav_switch ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.nav_switch ul li {
+    margin: 0 10px;
+    font-family: 'zen maru gothic' !important;
+}
+.nav_switch ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.nav_switch ul li a:hover {
+    color: #FF5974;
+}
+ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin-left: -5%;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem; */
+}
+.dropdown-menu li {
+    display: block;
+}
+.dropdown-menu li a {
+    display: block;
+    width: 100%;
+    padding: .45rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+}
+
+.nav_switch ul li:hover .dropdown-menu {
+    display: block;
+}
