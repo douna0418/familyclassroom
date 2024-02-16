@@ -6,7 +6,7 @@ const nav = () => {
     return (
         <nav className="menu">
             <div className='nav_logo'><img src="/assets/image/nav/nav_logo_l.png"></img></div>
-            <div className='nav_switch'>
+            <div className='nav_switch specific-element'>
                 <ul>
                     <li><Link to="/">關於不帆心</Link></li>
                     <li>

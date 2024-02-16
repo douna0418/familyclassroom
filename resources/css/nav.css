@@ -1,42 +1,40 @@
-@font-face {
-    font-family: 'Zen Maru Gothic';
-    src: url('/fonts/ZenMaruGothic-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Zen Maru Gothic';
-    src: url('/fonts/ZenMaruGothic-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
 .specific-element {
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 600;
 }
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: .5% 8%;
+    padding: .5% 3%;
     background-color: #ffffff;
+}
+/* 讓menu固定在最上方 */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 .nav_logo img {
     width: 220px;
 }
 .nav_switch ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
 }
 .nav_switch ul li {
     margin: 0 10px;
     font-family: 'zen maru gothic' !important;
+    font-size: 1.15em;
 }
 .nav_switch ul li a {
     text-decoration: none;
     color: #000;
+    font-weight: 600;
 }
 .nav_switch ul li a:hover {
     color: #FF5974;
@@ -47,14 +45,15 @@ ul.dropdown-menu {
     flex-direction: column;
     z-index: 1000;
     float: left;
-    min-width: 10rem;
+    min-width: 8rem;
     padding: .5rem 0;
-    margin-left: -3%;
+    margin-left: -1.7%;
     font-size: 1rem;
     color: #212529;
     text-align: left;
     list-style: none;
     background-color: #fff;
+    border-radius: 20px;
     background-clip: padding-box;
     /* border: 1px solid rgba(0,0,0,.15);
     border-radius: .25rem; */
@@ -65,9 +64,9 @@ ul.dropdown-menu {
 .dropdown-menu li a {
     display: block;
     width: 100%;
-    padding: .45rem 1.5rem;
+    padding: .45rem .5rem;
     clear: both;
-    font-weight: 400;
+    font-weight: 600;
     color: #212529;
     text-align: inherit;
     white-space: nowrap;
