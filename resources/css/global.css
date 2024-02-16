@@ -1,0 +1,70 @@
+/* 全域共用css */
+@font-face {
+    font-family: 'Zen Maru Gothic';
+    src: url('/fonts/ZenMaruGothic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zen Maru Gothic';
+    src: url('/fonts/ZenMaruGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans TC';
+    src: url('/fonts/NotoSansTC-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Capriola';
+    src: url('/fonts/Capriola-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title_box{
+    position: relative;
+}
+.sub_title, .main_title{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: #191980;
+    margin: 0;
+}
+.main_title{
+    font-weight: 600;
+    font-size: 2.25em;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+.sub_title{
+    font-weight: 600;
+    font-size: 1.25em;
+    position: relative;
+    z-index: 1;
+}
+.title_mark{
+    position: absolute;
+    left: 76.77%;
+    top: 0%;
+    bottom: 20%;
+    color: #FFF06A;
+    transform: rotate(12.53deg);
+    font-weight: 400;
+    font-size: 4.5em;
+    font-family: 'Capriola';
+    margin: 0;
+}
